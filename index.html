@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" control="width=device-width", initial-scale=1.0 >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Farhan eco</title>
@@ -21,7 +22,7 @@
 <img src="./images/logo.png" alt="" width="175px">
     </div>
     <nav>
-        <ul>
+        <ul id="menuitems">
             <li><a href="">home</a></li>
             <li><a href="">product</a></li>
             <li><a href="">About</a></li>
@@ -31,13 +32,14 @@
     </nav>
     <div class="cart_col">
     <img class="cart" src="images/cart.png"  width="30px" height="30px" alt="">
+    <!--<img  src="images/menu.png" class="menu_icon" onclick="menutoggle()">-->
 </div>
 </div>
 <div class="row">
     <div class="col_1">
-<h1>Give your workout a <br>new style!</h1>
+<h1>Give your workout a new style!</h1>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-     Accusamus obcaecati <br>deserunt incidunt aliquam architecto nostrum.</p>
+     Accusamus obcaecati deserunt incidunt aliquam architecto nostrum.</p>
     <a href="" class="btn">Explore now &#8608;</a>
     </div>
     <div class="col_2">
@@ -45,6 +47,20 @@
     </div>
 </div>
 </div>
+</div>
+<!--sidenav----->
+<div class="sidenav_hide">
+<nav id="sidenav"> 
+    <ul>
+        <li><a href="#">home</a></li><br>
+        <li><a href="#about">about</a></li><br>
+        <li><a href="#features">features</a></li><br>
+        <li><a href="#">blog</a></li><br>
+        <li><a href="#">learn</a></li><br>
+        <li><a href="#">privacy</a></li><br>
+    </ul>
+</nav>
+<img src="images/menu.png" id="menubtn">
 </div>
 
 <!--featured category-->
@@ -87,8 +103,8 @@
     <h3>Hot Blue 2p suits</h3>
     <p>$50.00</p>
 </div>
-    </div>
 </div>
+    </div>
 <!--offer-->
 <div class="offer">
 <div class="s_container">
@@ -138,6 +154,11 @@
             <div class="footer_col_1">
                 <h3>Downlode our app</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="store_logo">
+                   <div class="logo1"><img  src="images/play-store.png"></div>
+                   <div class="logo2"><img src="images/app-store.png" alt=""></div>
+                   
+                </div>
             </div>
             <div class="footer_col_2">
                 <img src="images/logo.png" alt="">
@@ -155,7 +176,46 @@
             </div>
         </div>
     </div>
+    <hr width="100%">
+    <h4 align="center">Copyright @Farhan Akhtar 2020</h4>
+    <br>
+    <h5 align="center">Hi GitHub User This is my first website, if you see any deficiency 
+        in this then definitely let me know and this site is currently under construction
+        I will change it even more now.</h5>
 </div>
+<!--js for toggle menu
+<script>
+    var Menuitems = document.getElementByid("Menuitems");
+
+    Menuitems.style.maxheight = "0px";
+
+    function menutoggle(){
+        if(Menuitems.style.maxheight == "0px")
+        {
+            Menuitems.style.maxheight = "200px";
+        }
+        else
+        {
+            Menuitems.style.maxheight = "0px";
+        }
+    } 
+</script>
+-->
+<!--java script code 2-->
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenav = document.getElementById("sidenav")
+
+    sidenav.style.right = "-250px";
+    menubtn.onclick = function(){
+        if(sidenav.style.right =="-250px"){
+            sidenav.style.right = "0";
+        }
+        else{
+            sidenav.style.right = "-250px"
+        }
+    }
+</script>
 
 </body>
 </html>

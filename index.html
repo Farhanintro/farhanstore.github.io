@@ -1,189 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" control="width=device-width", initial-scale=1.0 >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="images/favicon.ico" type="images/cart.png" sizes="16x16">
+    <!-- aos animation css link -->
+    <link rel="stylesheet" href="Aos animate css & js by farhan/aos.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- slider sections css link -->
+    <link rel="stylesheet" href="css/lightslider.css">
+    <!-- jquery link -->
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <!-- title -->
     <title>Farhan eco</title>
-     <link rel="icon" href="images/favicon.png" type="images/cart.png" sizes="16x16">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
-
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,400;1,500;1,700;1,800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-<!---header start-->
+    <!---header start-->
     <div class="header">
-    <div class="container">
-        <!---navigation bar-->
-<div class="navbar">
-    <!---main logo-->
-    <div class="logo">
-<img src="./images/logo.png" alt="" width="175px">
-    </div>
-    <nav>
-        <ul id="menuitems">
-            <li><a href="">home</a></li>
-            <li><a href="">product</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Account</a></li>
-        </ul>
-    </nav>
-    <div class="cart_col">
-    <img class="cart" src="images/cart.png"  width="30px" height="30px" alt="">
-    <!--<img  src="images/menu.png" class="menu_icon" onclick="menutoggle()">-->
-</div>
-</div>
-<div class="row">
-    <div class="col_1">
-<h1>Give your workout a new style!</h1>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-     Accusamus obcaecati deserunt incidunt aliquam architecto nostrum.</p>
-    <a href="" class="btn">Explore now &#8608;</a>
-    </div>
-    <div class="col_2">
-<img class="header_image" src="images/image1.png" alt="">
-    </div>
-</div>
-</div>
-</div>
-<!--sidenav----->
-<div class="sidenav_hide">
-<nav id="sidenav"> 
-    <ul>
-        <li><a href="#">home</a></li><br>
-        <li><a href="#about">about</a></li><br>
-        <li><a href="#features">features</a></li><br>
-        <li><a href="#">blog</a></li><br>
-        <li><a href="#">learn</a></li><br>
-        <li><a href="#">privacy</a></li><br>
-    </ul>
-</nav>
-<img src="images/menu.png" id="menubtn">
-</div>
-
-<!--featured category-->
-<div class="category">
-    <div class="s_container">
-        <div class="row">
-            <div class="col_3">
-                <img src="images/category-1.jpg" alt="">
-            </div>
-            <div class="col_3">
-                <img src="images/category-2.jpg" alt="">
-            </div>
-            <div class="col_3">
-                <img src="images/category-3.jpg" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-<!--featured products-->
-<div class="s_container">
-    <h2>featured products</h2>
-    <div class="row">
-        <div class="col_4">
-                  <img src="images/product-1.jpg" alt="">
-                  <h3>Hot Blue 2p suits</h3>
-                  <p>$50.00</p>
-        </div>
-        <div class="col_4">
-            <img src="images/product-1.jpg" alt="">
-            <h3>Hot Blue 2p suits</h3>
-            <p>$50.00</p>
-  </div>
-  <div class="col_4">
-    <img src="images/product-1.jpg" alt="">
-    <h3>Hot Blue 2p suits</h3>
-    <p>$50.00</p>
-</div>
-<div class="col_4">
-    <img src="images/product-1.jpg" alt="">
-    <h3>Hot Blue 2p suits</h3>
-    <p>$50.00</p>
-</div>
-</div>
-    </div>
-<!--offer-->
-<div class="offer">
-<div class="s_container">
-<div class="row">
-    <div class="col_1offer">
-        <img src="images/exclusive.png" class="offer_img" >
-    </div>
-    <div class="col_2offer">
-        <p>FARHAN AKHTAR</p>
-        <br>
-        <h1 class="offer_h1">A SMART WATCH.</h1>
-        <br>
-        <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate maxime, unde, temporibus hic voluptatum nisi sit earum animi consequatur officiis dolore iure in maiores!.</small>
-        <br>
-        <a href="" class="btn">Purchase Now &#8608;</a>
-    </div>
-</div>
-</div>
-</div>
-<!--person_profile-->
-<div class="person_profile">
-    <div class="s_cantainer">
-        <div class="row">
-            <div class="col_3">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae veniam officiis ullam, molestiae reprehenderit aperiam ipsa ab iure reiciendis eaque.</p>
-                     <img src="images/faizan user.png" alt="">
-                     <h3>Faizan khan</h3>
-            </div>
-            <div class="col_3">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae veniam officiis ullam, molestiae reprehenderit aperiam ipsa ab iure reiciendis eaque.</p>
-                     <img src="images/farhan user2.png" alt="">
-                     <h3>Farhan Akhtar</h3>
-            </div>
-            <div class="col_3">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae veniam officiis ullam, molestiae reprehenderit aperiam ipsa ab iure reiciendis eaque.</p>
-                     <img src="images/arshi user3.png" alt="">
-                     <h3>Arshi khan</h3>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--footer-->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="footer_col_1">
-                <h3>Downlode our app</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <div class="store_logo">
-                   <div class="logo1"><img  src="images/play-store.png"></div>
-                   <div class="logo2"><img src="images/app-store.png" alt=""></div>
-                   
+        <div class="container">
+            <!---navigation bar-->
+            <div class="navbar">
+                <!---main logo-->
+                <div class="logo">
+                    <img src="./images/ARHAN ECO.svg" alt="" width="175px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="#slider_section1">PRODUCT</a></li>
+                        <li><a href="#offer">OFFER</a></li>
+                        <li><a href="#review">REVIEW</a></li>
+                        <li><a href="">ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <div class="cart_col">
+                    <img class="cart" src="images/cart.png" width="30px" height="30px" alt="">
+                    <!--<img  src="images/menu.png" class="menu_icon" onclick="menutoggle()">-->
                 </div>
             </div>
-            <div class="footer_col_2">
-                <img src="images/logo.png" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-            <div class="footer_col_3">
-                <h3>Usefull link</h3>
-                <ul>
-                    <li>Blog</li>
-                    <li>privacy policy</li>
-                    <li>disclaimer</li>
-                    <li>sitemap</li>
-                </ul>
-                
+            <div class="row">
+                <div class="col_1">
+                    <div class="text-typing">
+                        <h1>Give your workout a new style!</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Accusamus obcaecati deserunt incidunt aliquam architecto nostrum.</p>
+                    <a href="" class="btn">Explore now &#8608;</a>
+                </div>
+                <div class="col_2">
+                    <img class="header_image" src="https://callfarhan.cf/farhanstore1" alt="">
+                </div>
             </div>
         </div>
     </div>
-    <hr width="100%">
-    <h4 align="center">Copyright @Farhan Akhtar 2020</h4>
-    <br>
-    <h5 align="center">Hi GitHub User This is my first website, if you see any deficiency 
-        in this then definitely let me know and this site is currently under construction
-        I will change it even more now.</h5>
-</div>
-<!--js for toggle menu
+    <!--sidenav----->
+    <div class="sidenav_hide">
+        <nav id="sidenav">
+            <ul>
+                <li><a href="#">HOME</a></li><br>
+                <li><a href="#slider_section1">PRODUCT</a></li><br>
+                <li><a href="#offer">OFFER</a></li><br>
+                <li><a href="#review">REVIEW</a></li><br>
+                <li><a href="">ACCOUNT</a></li><br>
+            </ul>
+        </nav>
+        <img src="images/menu.png" id="menubtn">
+    </div>
+
+    <!--featured category-->
+    <div class="category" data-aos="fade-in">
+        <div class="s_container">
+            <div class="row">
+                <div class="col_3 hover_featured">
+                    <img src="images/category-1.jpg" alt="">
+                </div>
+                <div class="col_3 hover_featured">
+                    <img src="images/category-2.jpg" alt="">
+                </div>
+                <div class="col_3 hover_featured">
+                    <img src="images/category-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- slider 1st section -->
+    <section data-aos="zoom-out-up" id="slider_section1">
+        <ul id="autoWidth" class="cs-hidden">
+            <!--1------------------------------>
+            <li class="item-a">
+                <div class="box box-img01">
+                    <div class="slide-details">
+                        <p>Design</p>
+                        <p>Lte's try New</p>
+                    </div>
+                    <div class="user user-img01"></div>
+                </div>
+            </li>
+            <!--2------------------------------>
+            <li class="item-b">
+                <div class="box box-img02">
+                    <div class="slide-details">
+                        <p>Design</p>
+                        <p>Lte's try New</p>
+                    </div>
+                    <div class="user user-img02"></div>
+                </div>
+            </li>
+            <!--3------------------------------>
+            <li class="item-c">
+                <div class="box box-img03">
+                    <div class="slide-details">
+                        <p>Design</p>
+                        <p>Lte's try New</p>
+                    </div>
+                    <div class="user user-img03"></div>
+                </div>
+            </li>
+            <!--4------------------------------>
+            <li class="item-d">
+                <div class="box box-img04">
+                    <div class="slide-details">
+                        <p>Design</p>
+                        <p>Lte's try New</p>
+                    </div>
+                    <div class="user user-img04"></div>
+                </div>
+            </li>
+            <!--5------------------------------>
+            <li class="item-e">
+                <div class="box box-img05">
+                    <div class="slide-details">
+                        <p>Design</p>
+                        <p>Lte's try New</p>
+                    </div>
+                    <div class="user user-img05"></div>
+                </div>
+            </li>
+            <!--6------------------------------>
+            <li class="item-f">
+                <div class="box box-img06">
+                    <div class="slide-details">
+                        <p>Design</p>
+                        <p>Lte's try New</p>
+                    </div>
+                    <div class="user user-img06"></div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- slider 1st section end -->
+
+    <!--offer-->
+    <div class="offer" id="offer">
+        <div class="s_container">
+            <div class="row">
+                <div class="col_1offer">
+                    <img src="images/exclusive.png" class="offer_img">
+                </div>
+                <div class="col_2offer">
+                    <p>PERIMIUM</p>
+                    <br>
+                    <h1 class="offer_h1">A SMART WATCH.</h1>
+                    <br>
+                    <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptate maxime, unde,
+                        temporibus hic voluptatum nisi sit earum animi consequatur officiis dolore iure in
+                        maiores!.</small>
+                    <br>
+                    <a href="" class="btn">Purchase Now &#8608;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--person_profile-->
+    <div class="person_profile" data-aos="zoom-in-up" id="review">
+        <div class="s_cantainer">
+            <div class="title">
+                <h1>HAPPY CUSTOMERS</h1>
+            </div>
+            <div class="row">
+                <div class="col_3">
+                    <p>“Exhibit Systems is always responsive to any question I have, they keep me informed and they
+                        understand who we are and what we’re trying to do. I firmly believe that. And, any time that I
+                        make contact with them,.”
+                    </p>
+                    <img src="images/faizan user.jpg" alt="">
+                    <h3>Faizan khan</h3>
+                </div>
+                <div class="col_3">
+                    <p>“Exhibit Systems is always responsive to any question I have, they keep me informed and they
+                        understand who we are and what we’re trying to do. I firmly believe that. And, any time that I
+                        make contact with them,”
+                    </p>
+                    <img src="images/justin bieber user 2 jpg.jpg" alt="">
+                    <h3>Jsutin Bieber</h3>
+                </div>
+                <div class="col_3">
+                    <p>“Exhibit Systems is always responsive to any question I have, they keep me informed and they
+                        understand who we are and what we’re trying to do. I firmly believe that. And, any time that I
+                        make contact with them,”
+                    </p>
+                    <img src="images/farhan user 5.jpg" alt="">
+                    <h3>Farhan Akhtar</h3>
+                </div>
+                <div class="col_3">
+                    <p>“Exhibit Systems is always responsive to any question I have, they keep me informed and they
+                        understand who we are and what we’re trying to do. I firmly believe that. And, any time that I
+                        make contact with them,”
+                    </p>
+                    <img src="images/arshi user3.png" alt="">
+                    <h3>Arshi khan</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <footer class="footer">
+        <div class="footer__addr">
+
+            <img class="footer__logo" src="images/ARHAN ECO.svg" alt="">
+
+            <h2>Contact</h2>
+
+            <address>
+                24/7 Somewhere In. The World ... :)<br>
+
+                <a class="footer__btn" href="farhanakhtarintro@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Online</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Print</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Alternative Ads</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Hardware Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Software Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Digital Signage</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Automation</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Artificial Intelligence</a>
+                    </li>
+
+                    <li>
+                        <a href="#">IoT</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2020. All rights reserved.</p>
+
+            <div class="legal__links">
+                <span>Made by <span class="heart">♥</span> Farhan Coder</span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!--js for toggle menu
 <script>
     var Menuitems = document.getElementByid("Menuitems");
 
@@ -201,21 +335,17 @@
     } 
 </script>
 -->
-<!--java script code 2-->
-<script>
-    var menubtn = document.getElementById("menubtn")
-    var sidenav = document.getElementById("sidenav")
-
-    sidenav.style.right = "-250px";
-    menubtn.onclick = function(){
-        if(sidenav.style.right =="-250px"){
-            sidenav.style.right = "0";
-        }
-        else{
-            sidenav.style.right = "-250px"
-        }
-    }
-</script>
-
+    <!--java script code 2-->
+    <!-- link aos animate js -->
+    <script src="Aos animate css & js by farhan/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            offset: 180
+        });
+    </script>
+    <!-- link external js -->
+    <script src="js/farhan.js"></script>
 </body>
+
 </html>
